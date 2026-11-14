@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support — Lava Floor AR</title>
+  <meta name="description" content="Lava Floor AR support and FAQ: LiDAR devices, local multiplayer, Practice Room, and how to reach Edward Dunn.">
+  <link rel="canonical" href="https://erdtheturd.github.io/floor-is-lava/support.html">
+  <!-- TODO: Point canonical / OG URLs at https://lavafloorar.com once that domain is bought. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Lava Floor AR">
+  <meta property="og:url" content="https://erdtheturd.github.io/floor-is-lava/support.html">
+  <meta property="og:title" content="Support — Lava Floor AR">
+  <meta property="og:description" content="FAQ for Lava Floor AR: LiDAR, multiplayer, Practice Room, and contact.">
+  <meta property="og:image" content="https://erdtheturd.github.io/floor-is-lava/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Support — Lava Floor AR">
+  <meta name="twitter:description" content="FAQ for Lava Floor AR: LiDAR, multiplayer, Practice Room, and contact.">
+  <meta name="twitter:image" content="https://erdtheturd.github.io/floor-is-lava/assets/og.png">
+  <link rel="icon" href="assets/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta name="theme-color" content="#0c0908">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav">
+      <a class="brand" href="index.html">
+        <img src="assets/icon-192.png" width="36" height="36" alt="">
+        <span>Lava Floor AR</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main" class="page">
+    <div class="page-narrow">
+      <h1>Support</h1>
+      <p class="lede">Quick answers for Lava Floor AR. Still stuck? Reach out.</p>
+
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:support@lavafloorar.com">support@lavafloorar.com</a></p>
+      <!-- TODO: Domain lavafloorar.com is not live yet — this mailbox is pending. Keep GitHub Issues as the working backup until the domain is bought and DNS/mail are set up. -->
+      <p class="todo-note">The lavafloorar.com mailbox is not live yet. Until it is, please use GitHub Issues.</p>
+      <p>Backup contact: <a href="https://github.com/ErdTheTurd/floor-is-lava/issues">github.com/ErdTheTurd/floor-is-lava/issues</a></p>
+
+      <h2>FAQ</h2>
+      <div class="faq">
+        <details open>
+          <summary>Which devices have LiDAR?</summary>
+          <p>LiDAR safe-spot scanning needs an iPhone or iPad with a LiDAR scanner. That includes recent Pro iPhones (12 Pro and later Pro models) and several iPad Pro models with LiDAR. Apple’s hardware list changes over time — if your device supports ARKit scene reconstruction with mesh classification, you get the automatic raised-surface pads.</p>
+          <p>Without LiDAR you can still play Solo AR with horizontal plane detection and tap-to-place safe spots, or open the Practice Room (no scanning).</p>
+        </details>
+        <details>
+          <summary>How does multiplayer work?</summary>
+          <p>Everyone needs an iPhone or iPad on the <strong>same local network</strong> (Wi‑Fi or peer-to-peer). Personal Hotspot often works; keep Bluetooth on. One person taps Multiplayer → Host. Others tap Join and accept the Local Network permission. When the lobby shows connected peers, the host enters the arena, places start/goal (and safe spots if needed), then starts the round. Countdown, timer, lava, and scores sync across devices. No internet and no accounts.</p>
+          <p>Prefer one device? Use Pass &amp; Play for 2–6 players taking turns on the same phone or tablet.</p>
+        </details>
+        <details>
+          <summary>What is the Practice Room?</summary>
+          <p>A built-in virtual living room with a couch, ottoman, cushions, rug, and coffee table. You get the same lava, timer, and safe-pad feel without using the camera — handy for learning the game, playing indoors when you cannot clear furniture, or trying Lava Floor AR in the Simulator.</p>
+        </details>
+        <details>
+          <summary>Does it need the internet?</summary>
+          <p>No. After you install the app, Solo AR, Pass &amp; Play, and the Practice Room work offline. Multiplayer only needs a local network between the devices in the room.</p>
+        </details>
+        <details>
+          <summary>Is any data collected?</summary>
+          <p>No. Lava Floor AR does not create accounts and does not collect analytics. Camera, LiDAR, and local-network traffic stay on your devices. See the <a href="privacy.html">privacy policy</a>.</p>
+        </details>
+        <details>
+          <summary>The lava looks different in bright rooms</summary>
+          <p>AR lighting follows your real environment. Try slightly lower room lights if the magma looks washed out, and make sure furniture tops are clear so LiDAR can see raised surfaces.</p>
+        </details>
+        <details>
+          <summary>Friends cannot find the lobby</summary>
+          <p>Confirm Local Network permission is allowed for Lava Floor AR in Settings, that devices are on the same Wi‑Fi (or hotspot), and that Bluetooth is on. Have the host leave and create a fresh lobby, then join again.</p>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>&copy; 2026 Edward Dunn</p>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="support.html">Support</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
