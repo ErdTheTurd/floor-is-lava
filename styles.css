@@ -1,4 +1,4 @@
-/* Lava Floor AR — marketing site */
+/* Lava Floor AR site */
 :root {
   --bg: #0c0908;
   --bg-elev: #16100e;
@@ -372,8 +372,7 @@ a:hover {
   html {
     scroll-behavior: auto;
   }
-  .hero-phones .phone,
-  .feature {
+  .hero-phones .phone {
     animation: none !important;
   }
 }
@@ -389,10 +388,9 @@ a:hover {
   gap: 1.25rem;
   width: min(100% - 2.5rem, var(--max));
   margin-inline: auto;
-  overflow-x: auto;
+  justify-content: center;
+  flex-wrap: wrap;
   padding-bottom: 0.5rem;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
 }
 
 .shot-strip .phone {
@@ -402,103 +400,55 @@ a:hover {
   filter: drop-shadow(0 16px 28px rgba(0, 0, 0, 0.4));
 }
 
-/* Features */
-.features {
-  padding: 1rem 0 4rem;
+/* Short facts block (no empty image columns) */
+.facts {
+  padding: 0.5rem 0 3rem;
 }
 
-.feature {
-  width: min(100% - 2.5rem, var(--max));
-  margin: 0 auto 3.5rem;
-  display: grid;
-  gap: 1.75rem;
-  align-items: center;
-  animation: rise-in 0.7s ease both;
+.facts-inner {
+  width: min(100% - 2.5rem, 40rem);
+  margin-inline: auto;
 }
 
-@media (min-width: 820px) {
-  .feature {
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 5rem;
-  }
-  .feature:nth-child(even) .copy {
-    order: 2;
-  }
-  .feature:nth-child(even) .media {
-    order: 1;
-  }
-}
-
-.kicker {
-  margin: 0 0 0.4rem;
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--lava);
-}
-
-.feature h2 {
-  margin: 0 0 0.85rem;
+.facts h2 {
+  margin: 0 0 1rem;
   font-family: var(--display);
-  font-size: clamp(1.55rem, 3vw, 2.05rem);
+  font-size: clamp(1.35rem, 2.6vw, 1.7rem);
   font-weight: 700;
   letter-spacing: -0.02em;
-  line-height: 1.15;
 }
 
-.feature p {
-  margin: 0 0 0.85rem;
+.facts p {
+  margin: 0 0 1rem;
   color: var(--muted);
-  max-width: 34rem;
+  max-width: 38rem;
 }
 
-.feature p:last-child {
+.facts p:last-child {
   margin-bottom: 0;
-}
-
-.media {
-  display: flex;
-  justify-content: center;
-}
-
-.media .phone {
-  width: min(100%, 250px);
 }
 
 .teal {
   color: var(--teal);
 }
 
-/* Privacy strip / closing CTA */
+/* Closing CTA */
 .closing {
-  width: min(100% - 2.5rem, var(--max));
-  margin: 0 auto 4rem;
-  padding: 2rem 1.75rem;
-  border-radius: 1.25rem;
-  background:
-    linear-gradient(145deg, rgba(196, 50, 18, 0.18), transparent 55%),
-    var(--bg-elev);
-  border: 1px solid var(--line);
-  text-align: center;
-}
-
-.closing h2 {
-  margin: 0 0 0.6rem;
-  font-family: var(--display);
-  font-size: clamp(1.4rem, 2.8vw, 1.85rem);
-  letter-spacing: -0.02em;
+  width: min(100% - 2.5rem, 40rem);
+  margin: 0 auto 3.5rem;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid var(--line);
+  text-align: left;
 }
 
 .closing p {
-  margin: 0 auto 1.25rem;
+  margin: 0 0 1rem;
   max-width: 36rem;
   color: var(--muted);
 }
 
 .closing .hero-cta {
-  align-items: center;
+  align-items: flex-start;
 }
 
 /* Footer */
@@ -607,7 +557,7 @@ a:hover {
 }
 
 .faq details[open] summary::after {
-  content: "–";
+  content: "-";
 }
 
 .faq details p {
